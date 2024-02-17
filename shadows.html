@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+
+</head>
+
+<body>
+    <!-- {x|y|blur|spread} -->
+    <!-- box1=for x and y axis -->
+    <!-- box2=for -x and -y axis -->
+    <!-- box3=for 4 sides of box -->
+    <style>
+        .box1 {
+            background-color: blue;
+            width: 30px;
+            padding: 100px;
+            box-shadow: -10px -10px 5px black;
+        }
+
+        .box2 {
+            background-color: blue;
+            width: 30px;
+            padding: 100px;
+            box-shadow: 10px 10px 5px black;
+
+        }
+
+        .box3 {
+            background-color: blue;
+            width: 30px;
+            padding: 100px;
+            box-shadow: 1px 1px 15px 10px;
+        }
+
+        .boxrow {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 150px;
+        }
+    </style>
+    <div class="boxrow">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+</body>
+
+</html>
